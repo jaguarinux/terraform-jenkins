@@ -15,3 +15,10 @@ systemctl status jenkins
 yum install -y yum-utils
 yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
 yum -y install terraform
+
+# nodejs
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+. ~/.nvm/nvm.sh
+nvm install node
+#test
+node -e "console.log('Running Node.js ' + process.version)"
