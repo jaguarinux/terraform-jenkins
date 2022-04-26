@@ -52,8 +52,13 @@ variable "cdirAll" {
   description = "Default cdir block to All"
   default     = "0.0.0.0/0"
 }
-# AMI
+# AMI Linux 2
 variable "ami-1" {
   description = "ami us-east-1"
   default     = "ami-03ededff12e34e59e"
+}
+# AMI Linux 2022
+variable "ami-2022" {
+  description = "ami 2022 us-east-1"
+  default     = "ami-0b784fdb4a12f014a"
 }
